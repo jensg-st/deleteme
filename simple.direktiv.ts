@@ -1,3 +1,7 @@
 function start(state) {
-    return "hello world"
+ 
+    var s = getSecret({
+        name: "jens"
+    })
+    return s
 }
