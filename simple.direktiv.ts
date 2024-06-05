@@ -1,5 +1,13 @@
+
+const fn = setupFunction({
+    image: "golang"
+    cmd: "direktiv"
+})
+
 function start(state) {
  
+
+
     var s = getSecret({
         name: "jens"
     })
@@ -7,7 +15,8 @@ function start(state) {
  
     var file = getFile({
         name: "content.txt"
+        scope: "shared"
     })
  
-    return s
+    return file.base64()
 }
