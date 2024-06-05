@@ -17,9 +17,23 @@ function start(state) {
 
     fn.execute(
         {
-            input: "hello"
+            input: {
+                files: [
+                    {
+                        name: "hello.txt",
+                        permission: 755,
+                        content: "hello world"
+                    }
+                ],
+                commands: [
+                    {
+                        command: "ls -la"
+                    }
+                ]
+            }
         }
     )
  
     return file.base64()
 }
+
