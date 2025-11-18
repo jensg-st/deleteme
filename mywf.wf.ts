@@ -1,4 +1,4 @@
-var s = secrets(["secretone"])
+var s = getSecrets(["secretone"])
 
 function stateOne(data) {
     log(data)
