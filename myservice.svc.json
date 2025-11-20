@@ -1,4 +1,7 @@
 {
-    "image": "ealen/echo-server:latest"
+    "image": "ealen/echo-server:latest",
+    "envs": [
+            { "name": "PORT", "value":"8080" } 
+    ]
 }
 
